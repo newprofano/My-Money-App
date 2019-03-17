@@ -6,6 +6,6 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state, list: action.payload.data };
 
     default:
-      return false;
+      return state;
   }
 };
